@@ -554,40 +554,6 @@ ORDER BY s.score DESC LIMIT 5</pre>
     </div>
   </section>
 
-  <!-- 19 como rodar -->
-  <section class="slide">
-    <h2><span class="n">18</span>Como rodar</h2>
-    <div class="cols">
-      <div>
-        <pre><span class="c"># 1) bancos (Docker): Mongo + Redis Stack + Neo4j</span>
-docker compose -f docker-compose.pipeline.yml up -d
-
-<span class="c"># 2) coleções, CRUD, agregações e Redis</span>
-python crud_pipeline.py
-
-<span class="c"># 3) grafo no Neo4j + os três algoritmos GDS</span>
-python graph_pipeline.py
-
-<span class="c"># 4) protótipo</span>
-streamlit run streamlit_app.py</pre>
-        <p class="muted">Ou <span class="mono">executar_pipeline.bat</span>, que faz os quatro passos.</p>
-      </div>
-      <div class="card">
-        <h3>Organização do projeto</h3>
-        <table>
-          <tr><th>Arquivo</th><th>Função</th></tr>
-          <tr><td class="mono">crud_pipeline.py</td><td>MongoDB e Redis</td></tr>
-          <tr><td class="mono">graph_pipeline.py</td><td>Neo4j e GDS</td></tr>
-          <tr><td class="mono">grafo_visual.py</td><td>visualização do grafo</td></tr>
-          <tr><td class="mono">streamlit_app.py</td><td>interface</td></tr>
-          <tr><td class="mono">logs/</td><td>saídas de cada etapa</td></tr>
-          <tr><td class="mono">screenshots/</td><td>telas e coleções</td></tr>
-          <tr><td class="mono">docs/</td><td>modelagem</td></tr>
-        </table>
-      </div>
-    </div>
-  </section>
-
   <div class="foot"><span class="cur" id="cur">1</span> / <span id="tot">19</span> &nbsp;·&nbsp; ← → para navegar</div>
 </div>
 
